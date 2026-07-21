@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@page import="com.BeanClasses.UploadBean"%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>UploadSuccessjsp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script type="text/javascript">
+        window.history.forward();
+        function noBackk()
+        {
+            window.history.forward();
+        }
+</SCRIPT><!-- <BODY onLoad="noBack();" ></body> -->
+<div class="main">
+  <div class="header_resize">
+    <div class="header">
+      <div class="logo"><img src="images/create_thumb.png" width="233" height="97" border="0" alt="" style="width: 220px; height: 81px; "/></a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.jsp">Home</a></li>
+        <li><a href="UserLogout">Logout</a></li>
+          <li><a href="portfolio.jsp" class="active">Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.jsp">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="search">
+       <form id="form1" name="form1" method="post" action="Search">
+          <span>
+          <input type="search" name="search"/>
+         <!--  <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="" /> -->
+          </span>
+          <input name="b" type="image" src="images/search.gif" class="submit" />
+        </form>
+      </div>
+      <div class="clr"></div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="header_blog">
+    <div class="header_blog_resize">
+      <h2>Our Work</h2>
+      <div class="menu2">
+        <ul>
+          <li><a href="#" class="active">All</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#"> Templates</a></li>
+          <li><a href="#"> Art Work</a></li>
+          <li><a href="#"> Painting</a></li>
+          <li><a href="#"> Branding</a></li>
+          <li><a href="#"> Drawings</a></li>
+        </ul>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="body">
+    <div class="body_resize">
+      <div class="right_port">
+        <h2>Portfolio Item</h2>
+        <img src="images/port_1.jpg" alt="" width="292" height="101" />
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five </p>
+        <p><a href="#">View Site »</a></p>
+      </div >
+      <div>
+ <%
+UploadBean bean=new UploadBean();
+String s = session.getAttribute("key").toString().trim();
+
+out.print("UserValue  ::-  "+" "+s);
+
+%> 
+        </div>
+      <div class="right_port">
+        <h2>Portfolio Item</h2>
+        <img src="images/port_2.jpg" alt="" width="292" height="101" />
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five </p>
+        <p><a href="#">View Site »</a></p>
+      </div>
+      <div class="right_port">
+        <h2>Portfolio Item</h2>
+        <img src="images/port_3.jpg" alt="" width="292" height="101" />
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five </p>
+        <p><a href="#">View Site »</a></p>
+      </div>
+      <div class="right_port">
+        <h2>Portfolio Item</h2>
+        <img src="images/port_4.jpg" alt="" width="292" height="101" />
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five </p>
+        <p><a href="#">View Site »</a></p>
+      </div>
+      <div class="right_port">
+        <h2>Portfolio Item</h2>
+        <img src="images/port_5.jpg" alt="" width="292" height="101" />
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five </p>
+        <p><a href="#">View Site »</a></p>
+      </div>
+      <div class="right_port">
+        <h2>Portfolio Item</h2>
+        <img src="images/port_6.jpg" alt="" width="292" height="101" />
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five </p>
+        <p><a href="#">View Site »</a></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="FBG">
+    <div class="FBG_resize">
+      <div class="left">
+        <h2>About</h2>
+        <ul>
+          <li>» <a href="#">Lorem ipsum dolor sit amet</a></li>
+          <li>» <a href="#">Nunc interdum dictum bibendum</a></li>
+          <li>» <a href="#">Aliquam scelerisque</a></li>
+          <li>» <a href="#">Pellentesque id est velit</a></li>
+          <li>» <a href="#">Maecenas accumsan</a></li>
+          <li>» <a href="#">Maecenas a odio id arcu</a></li>
+        </ul>
+      </div>
+      <div class="left">
+        <h2>Tweets</h2>
+        <p>Lorem ipsum dolor sit amet<br />
+          <strong>August 18th, 2015</strong><br />
+          Lorem ipsum dolor sit amet<br />
+          <strong>August 18th, 2015</strong><br />
+          Lorem ipsum dolor sit amet<br />
+          <strong>August 18th, 2015</strong></p>
+      </div>
+      <div class="left">
+        <h2>Our Services</h2>
+        <p><strong>Web Design</strong><br />
+          Concept designs to XHTML/CSS.<br />
+          <strong>Identity</strong><br />
+          Logos designs to Business Cards.<br />
+          <strong>Graphics</strong><br />
+          Photos to Poster Designs</p>
+      </div>
+      <div class="left">
+        <h2>Contact</h2>
+        <p><strong>+1 215.676.7876<br />
+          contact@mycompany.com</strong><br />
+          123 Pine Street<br />
+          Mycity, ST 19000</p>
+        <a href="#"><img src="images/rss_1.gif" alt="" width="18" height="16" border="0" /></a> <a href="#"><img src="images/rss_2.gif" alt="" width="18" height="16" border="0" /></a> <a href="#"><img src="images/rss_3.gif" alt="" width="18" height="16" border="0" /></a> </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="clr"></div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="leftt">© Copyright websitename . All Rights Reserved<br />
+        <a href="#">Home</a> | <a href="#">Contact</a> | <a href="#">RSS</a></p>
+      <p class="right">(Blue) <a href="http://www.bluewebtemplates.com">Website Templates</a></p>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+</body>
+</html>

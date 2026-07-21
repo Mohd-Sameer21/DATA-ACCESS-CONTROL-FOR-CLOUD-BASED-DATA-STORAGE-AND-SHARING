@@ -1,0 +1,1 @@
+java works by first compiling the source code into bytecode. Then, the bytecode can be compiled into machine code with the java Virtual Machine
